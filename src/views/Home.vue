@@ -1,7 +1,5 @@
 <template>
-
-    <Container />
-
+  <Container />
 </template>
 
 <script>
