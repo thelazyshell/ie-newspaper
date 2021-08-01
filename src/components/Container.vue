@@ -17,7 +17,13 @@
       </div>
       <div class="mb-3 mx-auto">
         <label for="exampleInputPassword1" class="form-label">Please select a date</label><br />
-        <date-picker v-model="date" format="DD-MM-YYYY" value-type="DD-MM-YYYY"></date-picker>
+        <date-picker
+          v-model="date"
+          format="DD-MM-YYYY"
+          value-type="DD-MM-YYYY"
+          :default-value="new Date()"
+          :disabled-date="disabledDate"
+        ></date-picker>
       </div>
 
       <button
@@ -41,7 +47,7 @@ export default {
   components: { DatePicker },
   data: () => ({
     city: null,
-    date: null,
+    date: new Date(),
   }),
   methods: {
     login() {
@@ -50,6 +56,14 @@ export default {
         window.location.href = url;
       }
       return true;
+    },
+    disabledDate(date) {
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      return date > today || date < new Date(1627606800000);
+    },
+    disabledRange(date) {
+      return date < new Date(2021, 7, 2) || date > new Date(2021, 6, 31);
     },
   },
 
