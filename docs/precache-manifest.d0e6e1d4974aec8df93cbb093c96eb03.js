@@ -4,12 +4,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ie-newspaper/css/chunk-vendors.971ba6a1.css"
   },
   {
-    "revision": "ceb4a88f44e24b44a2f10e35dbe81566",
+    "revision": "fce5bdb3bb47010048f2cb2a99402075",
     "url": "/ie-newspaper/index.html"
   },
   {
-    "revision": "bbb0800530aa2f2b9509",
-    "url": "/ie-newspaper/js/app.c37432bf.js"
+    "revision": "00a2ebe570af357540cb",
+    "url": "/ie-newspaper/js/app.5e6d5c48.js"
   },
   {
     "revision": "99c3c0759c305b432fa2",
