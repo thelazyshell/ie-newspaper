@@ -30,7 +30,7 @@
         type="submit"
         class="btn btn-primary w-25 mx-auto"
         :disabled="is_disabled"
-        @click.prevent="login"
+        @click.prevent="readPaper"
       >
         Submit
       </button>
@@ -50,9 +50,9 @@ export default {
     date: new Date(),
   }),
   methods: {
-    login() {
+    readPaper() {
       if (this.city && this.date) {
-        const url = `https://mademartindia.com/test/${this.date}/${this.city}-${this.date}.pdf`;
+        const url = `https://thelazyshell.github.io/ie-newspaper/epapers/${this.date}/${this.city}/${this.city}.pdf`;
         window.location.href = url;
       }
       return true;
