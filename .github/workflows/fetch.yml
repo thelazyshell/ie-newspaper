@@ -1,0 +1,79 @@
+# This workflow download epapers from the server & save it on our repo
+
+name: Download-epapers
+
+# Controls when the workflow will run
+on:
+  schedule:
+    - cron: '0 11 * * *' # every morning at 4:30 IST 11PM UTC
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  Download-and-save-epapers:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.1
+
+      - name: setup-node
+        uses: actions/setup-node@master
+
+      - name: Copy previously saved epapers
+        uses: andstor/copycat-action@v3
+        with:
+          personal_token: ${{ secrets.TOKEN }}
+          src_branch: publish
+          src_path: /epapers/.
+          dst_path: /public/epapers/
+          dst_branch: master
+          dst_owner: thelazyshell
+          dst_repo_name: kuchbhi
+
+      - name: Build app and wget todays epaper in epaper folder
+        run: |
+          npm install
+          npm run build
+          cd docs
+          cd epapers
+          aajKiDate=`date +%d-%m-%Y`
+          mkdir $aajKiDate
+          cd $aajKiDate
+          mkdir ahmedabad
+          cd ahmedabad
+          wget -q -O ahmedabad.pdf "${{ secrets.PAPER_URL_A }}${aajKiDate}.pdf"
+          cd ..
+          mkdir chandigarh
+          cd chandigarh
+          wget -q -O chandigarh.pdf "${{ secrets.PAPER_URL_C }}${aajKiDate}.pdf"
+          cd ..
+          mkdir delhi
+          cd delhi
+          wget -q -O delhi.pdf "${{ secrets.PAPER_URL_D }}${aajKiDate}.pdf"
+          cd ..
+          mkdir jaipur
+          cd jaipur
+          wget -q -O jaipur.pdf "${{ secrets.PAPER_URL_J }}${aajKiDate}.pdf"
+          cd ..
+          mkdir kolkata
+          cd kolkata
+          wget -q -O kolkata.pdf "${{ secrets.PAPER_URL_K }}${aajKiDate}.pdf"
+          cd ..
+          mkdir lucknow
+          cd lucknow
+          wget -q -O lucknow.pdf "${{ secrets.PAPER_URL_L }}${aajKiDate}.pdf"
+          cd ..
+          mkdir mumbai
+          cd mumbai
+          wget -q -O mumbai.pdf "${{ secrets.PAPER_URL_M }}${aajKiDate}.pdf"
+          cd ..
+          mkdir pune
+          cd pune
+          wget -q -O pune.pdf "${{ secrets.PAPER_URL_P }}${aajKiDate}.pdf"
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: publish # The branch the action should deploy to.
+          folder: docs # The folder the action should deploy.
