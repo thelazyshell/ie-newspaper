@@ -41,37 +41,15 @@ jobs:
           aajKiDate=`date +%d-%m-%Y`
           mkdir $aajKiDate
           cd $aajKiDate
-          mkdir ahmedabad
-          cd ahmedabad
           wget -q -O ahmedabad.pdf "${{ secrets.PAPER_URL_A }}${aajKiDate}.pdf"
-          cd ..
-          mkdir chandigarh
-          cd chandigarh
           wget -q -O chandigarh.pdf "${{ secrets.PAPER_URL_C }}${aajKiDate}.pdf"
-          cd ..
-          mkdir delhi
-          cd delhi
           wget -q -O delhi.pdf "${{ secrets.PAPER_URL_D }}${aajKiDate}.pdf"
-          cd ..
-          mkdir jaipur
-          cd jaipur
           wget -q -O jaipur.pdf "${{ secrets.PAPER_URL_J }}${aajKiDate}.pdf"
-          cd ..
-          mkdir kolkata
-          cd kolkata
           wget -q -O kolkata.pdf "${{ secrets.PAPER_URL_K }}${aajKiDate}.pdf"
-          cd ..
-          mkdir lucknow
-          cd lucknow
           wget -q -O lucknow.pdf "${{ secrets.PAPER_URL_L }}${aajKiDate}.pdf"
-          cd ..
-          mkdir mumbai
-          cd mumbai
           wget -q -O mumbai.pdf "${{ secrets.PAPER_URL_M }}${aajKiDate}.pdf"
-          cd ..
-          mkdir pune
-          cd pune
           wget -q -O pune.pdf "${{ secrets.PAPER_URL_P }}${aajKiDate}.pdf"
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
