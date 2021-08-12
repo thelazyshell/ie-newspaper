@@ -52,7 +52,7 @@ export default {
   methods: {
     readPaper() {
       if (this.city && this.date) {
-        const url = `https://thelazyshell.github.io/ie-newspaper/epapers/${this.date}/${this.city}/${this.city}.pdf`;
+        const url = `https://thelazyshell.github.io/ie-newspaper/epapers/${this.date}/${this.city}.pdf`;
         window.location.href = url;
       }
       return true;
