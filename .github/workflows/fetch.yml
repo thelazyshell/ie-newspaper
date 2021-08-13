@@ -36,11 +36,15 @@ jobs:
         run: |
           npm install
           npm run build
+          echo "built completed"
           cd docs
           cd epapers
+          echo "i am inside epapers folder"
           aajKiDate=`date  --date="next day" +"%d-%m-%y"`
+          echo "downloading ${aajKiDate} files"
           mkdir $aajKiDate
           cd $aajKiDate
+          echo "Starting download"
           wget -q -O ahmedabad.pdf "${{ secrets.PAPER_URL_A }}${aajKiDate}.pdf"
           wget -q -O chandigarh.pdf "${{ secrets.PAPER_URL_C }}${aajKiDate}.pdf"
           wget -q -O delhi.pdf "${{ secrets.PAPER_URL_D }}${aajKiDate}.pdf"
@@ -49,6 +53,7 @@ jobs:
           wget -q -O lucknow.pdf "${{ secrets.PAPER_URL_L }}${aajKiDate}.pdf"
           wget -q -O mumbai.pdf "${{ secrets.PAPER_URL_M }}${aajKiDate}.pdf"
           wget -q -O pune.pdf "${{ secrets.PAPER_URL_P }}${aajKiDate}.pdf"
+          echo "Download finished"
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
