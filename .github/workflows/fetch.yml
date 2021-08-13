@@ -38,7 +38,7 @@ jobs:
           npm run build
           cd docs
           cd epapers
-          aajKiDate=`date +%d-%m-%Y`
+          aajKiDate=`date  --date="next day" +"%d-%m-%y"`
           mkdir $aajKiDate
           cd $aajKiDate
           wget -q -O ahmedabad.pdf "${{ secrets.PAPER_URL_A }}${aajKiDate}.pdf"
