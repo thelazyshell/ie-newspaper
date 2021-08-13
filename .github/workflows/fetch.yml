@@ -5,7 +5,7 @@ name: Download-epapers
 # Controls when the workflow will run
 on:
   schedule:
-    - cron: '0 23 * * *' # every morning at 4:30AM IST 11:30PM UTC
+    - cron: '0 23 * * *' # every morning at 4:30AM IST 11:00PM UTC
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -40,7 +40,7 @@ jobs:
           cd docs
           cd epapers
           echo "i am inside epapers folder"
-          aajKiDate=`date  --date="next day" +"%d-%m-%y"`
+          aajKiDate=`date  --date="next day" +"%d-%m-%Y"`
           echo "downloading ${aajKiDate} files"
           mkdir $aajKiDate
           cd $aajKiDate
