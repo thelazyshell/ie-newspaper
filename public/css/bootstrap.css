@@ -11174,4 +11174,11 @@ fieldset:disabled .btn {
   }
 }
 
-/*# sourceMappingURL=bootstrap.css.map */
+/* some custom css */
+
+#vuePdfApp {
+  height: 100vh;
+}
+.mx-datepicker {
+  width: 100%;
+}
