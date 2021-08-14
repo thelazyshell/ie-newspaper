@@ -30,7 +30,7 @@ jobs:
           dst_path: /public/epapers/
           dst_branch: master
           dst_owner: thelazyshell
-          dst_repo_name: kuchbhi
+          dst_repo_name: ie-newspaper
 
       - name: Build app and wget todays epaper in epaper folder
         run: |
