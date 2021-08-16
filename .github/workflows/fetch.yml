@@ -40,19 +40,25 @@ jobs:
           cd docs
           cd epapers
           echo "i am inside epapers folder"
-          aajKiDate=`date  --date="next day" +"%d-%m-%Y"`
-          echo "downloading ${aajKiDate} files"
-          mkdir $aajKiDate
-          cd $aajKiDate
+          abhiKaTime=`date +"%H"`
+          if [ $abhiKaTime  -eq  '23' ]
+          then
+            fileKiDate=`date  --date="next day" +"%d-%m-%Y"`
+          else
+            fileKiDate=`date +%d-%m-%Y`
+          fi
+          echo "downloading ${fileKiDate} files at ${abhiKaTime}"
+          mkdir $fileKiDate
+          cd $fileKiDate
           echo "Starting download"
-          wget -q -O ahmedabad.pdf "${{ secrets.PAPER_URL_A }}${aajKiDate}.pdf"
-          wget -q -O chandigarh.pdf "${{ secrets.PAPER_URL_C }}${aajKiDate}.pdf"
-          wget -q -O delhi.pdf "${{ secrets.PAPER_URL_D }}${aajKiDate}.pdf"
-          wget -q -O jaipur.pdf "${{ secrets.PAPER_URL_J }}${aajKiDate}.pdf"
-          wget -q -O kolkata.pdf "${{ secrets.PAPER_URL_K }}${aajKiDate}.pdf"
-          wget -q -O lucknow.pdf "${{ secrets.PAPER_URL_L }}${aajKiDate}.pdf"
-          wget -q -O mumbai.pdf "${{ secrets.PAPER_URL_M }}${aajKiDate}.pdf"
-          wget -q -O pune.pdf "${{ secrets.PAPER_URL_P }}${aajKiDate}.pdf"
+          wget -q -O ahmedabad.pdf "${{ secrets.PAPER_URL_A }}${fileKiDate}.pdf"
+          wget -q -O chandigarh.pdf "${{ secrets.PAPER_URL_C }}${fileKiDate}.pdf"
+          wget -q -O delhi.pdf "${{ secrets.PAPER_URL_D }}${fileKiDate}.pdf"
+          wget -q -O jaipur.pdf "${{ secrets.PAPER_URL_J }}${fileKiDate}.pdf"
+          wget -q -O kolkata.pdf "${{ secrets.PAPER_URL_K }}${fileKiDate}.pdf"
+          wget -q -O lucknow.pdf "${{ secrets.PAPER_URL_L }}${fileKiDate}.pdf"
+          wget -q -O mumbai.pdf "${{ secrets.PAPER_URL_M }}${fileKiDate}.pdf"
+          wget -q -O pune.pdf "${{ secrets.PAPER_URL_P }}${fileKiDate}.pdf"
           echo "Download finished"
 
       - name: Deploy 🚀
