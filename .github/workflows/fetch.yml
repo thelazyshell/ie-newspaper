@@ -28,7 +28,7 @@ jobs:
           src_branch: publish
           src_path: /epapers/.
           dst_path: /public/epapers/
-          dst_branch: master
+          dst_branch: main
           dst_owner: thelazyshell
           dst_repo_name: ie-newspaper
 
