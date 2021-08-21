@@ -1,6 +1,6 @@
 # This workflow download epapers from the server & save it on our repo
 
-name: Download-epapers
+name: Download-Latest-ePapers
 
 # Controls when the workflow will run
 on:
@@ -12,7 +12,7 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  Download-and-save-epapers:
+  Download-and-publish-latest-epapers:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -20,17 +20,6 @@ jobs:
 
       - name: setup-node
         uses: actions/setup-node@master
-
-      - name: Copy previously saved epapers
-        uses: andstor/copycat-action@v3
-        with:
-          personal_token: ${{ secrets.TOKEN }}
-          src_branch: publish
-          src_path: /epapers/.
-          dst_path: /public/epapers/
-          dst_branch: main
-          dst_owner: thelazyshell
-          dst_repo_name: ie-newspaper
 
       - name: Build app and wget todays epaper in epaper folder
         run: |
