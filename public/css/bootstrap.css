@@ -11179,6 +11179,7 @@ fieldset:disabled .btn {
 #vuePdfApp {
   height: 100vh;
 }
-.mx-datepicker {
+
+form div.mx-datepicker {
   width: 100%;
 }
