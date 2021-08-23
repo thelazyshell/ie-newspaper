@@ -11179,6 +11179,27 @@ fieldset:disabled .btn {
 #vuePdfApp {
   height: 100vh;
 }
-.mx-datepicker {
+
+form div.mx-datepicker {
   width: 100%;
+}
+
+/* 
+
+#toolbarViewerMiddle .toolbarButton > span {
+  height: unset;
+  width: unset;
+} 
+
+#secondaryToolbarToggle > span {
+  height: unset;
+  width: unset;
+}
+
+*/
+
+#zoomOut > span,
+#zoomIn > span {
+  height: unset;
+  width: unset;
 }
