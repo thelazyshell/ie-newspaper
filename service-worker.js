@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ie-newspaper/precache-manifest.888e5b9e232e455e58a9b32db94e1d75.js"
+  "/ie-newspaper/precache-manifest.a0dd7c86feb385785b73e02db677794f.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "ie"});
