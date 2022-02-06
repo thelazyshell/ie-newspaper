@@ -27,6 +27,7 @@ jobs:
           npm run build
           echo "built completed"
           cd docs
+          mkdir epapers
           cd epapers
           echo "i am inside epapers folder"
           abhiKaTime=`date +"%H"`
