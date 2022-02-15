@@ -28,7 +28,9 @@ jobs:
           echo "built completed"
           cd docs
           cd epapers
-          echo "i am inside epapers folder"
+          echo "i am inside epapers folder"          
+          sevenDayOldDays=`date  --date="7 days ago" +"%d-%m-%Y"`
+          rm -r sevenDayOldDays
           abhiKaTime=`date +"%H"`
           if [ $abhiKaTime  -eq  '23' ]
           then
