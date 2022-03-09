@@ -56,12 +56,9 @@ export default {
       const today = new Date();
       today.setHours(0, 0, 0, 0);
       const dateBefore7Days = new Date();
-      dateBefore7Days.setDate(dateBefore7Days.getDate() - 7);
+      dateBefore7Days.setDate(dateBefore7Days.getDate() - 6);
       dateBefore7Days.setHours(0, 0, 0, 0);
-      return date > dateBefore7Days;
-    },
-    disabledRange(date) {
-      return date < new Date(2021, 7, 2) || date > new Date(2021, 6, 31);
+      return date < dateBefore7Days || date > today;
     },
     pagesRendered() {
       this.showPDF = true;
