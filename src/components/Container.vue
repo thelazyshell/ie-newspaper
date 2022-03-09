@@ -55,7 +55,11 @@ export default {
     disabledDate(date) {
       const today = new Date();
       today.setHours(0, 0, 0, 0);
-      return date > today || date < new Date(1627606800000);
+      const dateAfter7Days = new Date();
+      dateAfter7Days.setDate(dateAfter7Days.getDate() + 7);
+      dateAfter7Days.setHours(0, 0, 0, 0);
+      console.log(dateAfter7Days);
+      return date > today || date < dateAfter7Days;
     },
     disabledRange(date) {
       return date < new Date(2021, 7, 2) || date > new Date(2021, 6, 31);
