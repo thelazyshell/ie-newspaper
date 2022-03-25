@@ -31,7 +31,6 @@ jobs:
           
       - name: Delete old epapers
         run: |
-		  pwd
           ls
           ls -l
           echo ls
