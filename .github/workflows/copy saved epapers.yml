@@ -18,13 +18,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2.3.1
 
-      - name: Copy previously saved epapers
-        uses: andstor/copycat-action@v3
-        with:
-          personal_token: ${{ secrets.TOKEN }}
-          src_branch: publish
-          src_path: /epapers/.
-          dst_path: /public/epapers/
-          dst_branch: main
-          dst_owner: thelazyshell
-          dst_repo_name: ie-newspaper
+
+          
+      - name: Delete old epapers
+        run: |
+          echo pwd
