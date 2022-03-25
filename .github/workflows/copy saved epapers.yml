@@ -21,3 +21,10 @@ jobs:
           pwd
           ls
           ls -l
+          echo ls
+          echo ls -l
+          cd public
+          ls
+          ls -l
+          echo ls
+          echo ls -l
