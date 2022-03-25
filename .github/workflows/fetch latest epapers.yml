@@ -30,7 +30,10 @@ jobs:
           cd epapers
           echo "i am inside epapers folder"          
           sevenDayOldDays=`date  --date="7 days ago" +"%d-%m-%Y"`
+          if [ -d "$sevenDayOldDays" ]; then
+              printf '%s\n' "Removing Lock ($sevenDayOldDays)"
           rm -r $sevenDayOldDays
+          fi
           abhiKaTime=`date +"%H"`
           if [ $abhiKaTime  -eq  '23' ]
           then
