@@ -28,15 +28,5 @@ jobs:
           dst_branch: main
           dst_owner: thelazyshell
           dst_repo_name: ie-newspaper
+          clean: true
           
-      - name: Delete old epapers
-        run: |
-          cd public
-          cd epapers
-          echo "i am inside epapers folder"          
-          sevenDayOldDays=`date  --date="7 days ago" +"%d-%m-%Y"`
-          if [ -d "$sevenDayOldDays" ]; then
-              printf '%s\n' "Removing Lock ($sevenDayOldDays)"
-          rm -r $sevenDayOldDays
-          fi
-          echo ls -l
