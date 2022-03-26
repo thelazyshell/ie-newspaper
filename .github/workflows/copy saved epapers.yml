@@ -31,11 +31,13 @@ jobs:
           
       - name: Delete old epapers
         run: |
-          ls
-          ls -l
-          echo ls
-          echo ls -l
-          ls
-          ls -l
-          echo ls
-          echo ls -l
+          cd public
+          cd epapers
+          echo "i am inside epapers folder"          
+          sevenDayOldDays=`date  --date="7 days ago" +"%d-%m-%Y"`
+          if [ -d "$sevenDayOldDays" ]; then
+              printf '%s\n' "Removing Lock ($sevenDayOldDays)"
+		      rm -r $sevenDayOldDays
+			  echo ls -l
+          fi
+          echo "Finished"
