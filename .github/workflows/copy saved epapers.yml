@@ -37,7 +37,6 @@ jobs:
           sevenDayOldDays=`date  --date="7 days ago" +"%d-%m-%Y"`
           if [ -d "$sevenDayOldDays" ]; then
               printf '%s\n' "Removing Lock ($sevenDayOldDays)"
-		      rm -r $sevenDayOldDays
-			  echo ls -l
+          rm -r $sevenDayOldDays
           fi
-          echo "Finished"
+          echo ls -l
