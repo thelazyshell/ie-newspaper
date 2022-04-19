@@ -1,0 +1,382 @@
+self.__precacheManifest = (self.__precacheManifest || []).concat([
+  {
+    "revision": "630c16af8a9c93c91dbe7d59619c82e3",
+    "url": "/ie-newspaper/css/bootstrap.css"
+  },
+  {
+    "revision": "91c8f52ad176257bc4bf",
+    "url": "/ie-newspaper/css/chunk-vendors.971ba6a1.css"
+  },
+  {
+    "revision": "77f3ff449be0b305f1d67a32cf8aaa6b",
+    "url": "/ie-newspaper/epapers/12-04-2022/ahmedabad.pdf"
+  },
+  {
+    "revision": "9b53a4a3c6218282d2d98c3bf6cb1125",
+    "url": "/ie-newspaper/epapers/12-04-2022/chandigarh.pdf"
+  },
+  {
+    "revision": "bae8b6ee00949a97d5287d809be27a3f",
+    "url": "/ie-newspaper/epapers/12-04-2022/delhi.pdf"
+  },
+  {
+    "revision": "276f3b4ab2fd8716b851327f40df8c74",
+    "url": "/ie-newspaper/epapers/12-04-2022/jaipur.pdf"
+  },
+  {
+    "revision": "b1d9f93109fc96baa98661107393aa9b",
+    "url": "/ie-newspaper/epapers/12-04-2022/kolkata.pdf"
+  },
+  {
+    "revision": "7bced4a00041e90e19ea14fc8090b0e2",
+    "url": "/ie-newspaper/epapers/12-04-2022/lucknow.pdf"
+  },
+  {
+    "revision": "7a83b15913467ccf2ecb844368764d40",
+    "url": "/ie-newspaper/epapers/12-04-2022/mumbai.pdf"
+  },
+  {
+    "revision": "f64bc517a68ef94431940aaeb18a4581",
+    "url": "/ie-newspaper/epapers/12-04-2022/pune.pdf"
+  },
+  {
+    "revision": "8a1eccb8dd39553976477f8dc244940a",
+    "url": "/ie-newspaper/epapers/13-04-2022/ahmedabad.pdf"
+  },
+  {
+    "revision": "2f4c00a5683e0e0e5a9b5b0e948f2df2",
+    "url": "/ie-newspaper/epapers/13-04-2022/chandigarh.pdf"
+  },
+  {
+    "revision": "aff9991a4962e022f6101aa81aa083d6",
+    "url": "/ie-newspaper/epapers/13-04-2022/delhi.pdf"
+  },
+  {
+    "revision": "6012ad5d9ceff3e0181fc16360b34e3e",
+    "url": "/ie-newspaper/epapers/13-04-2022/jaipur.pdf"
+  },
+  {
+    "revision": "9bb11e4c041d3d54505446fa92fcc2a6",
+    "url": "/ie-newspaper/epapers/13-04-2022/kolkata.pdf"
+  },
+  {
+    "revision": "fe8b043ce2f1ecfd1cebba91e7d7bb44",
+    "url": "/ie-newspaper/epapers/13-04-2022/lucknow.pdf"
+  },
+  {
+    "revision": "7d58fec0a0ac62147e33317fa741769c",
+    "url": "/ie-newspaper/epapers/13-04-2022/mumbai.pdf"
+  },
+  {
+    "revision": "934aba37b2c47fb40b460570a17edf8c",
+    "url": "/ie-newspaper/epapers/13-04-2022/pune.pdf"
+  },
+  {
+    "revision": "4e467b974f16141f4190a9b80ffdf860",
+    "url": "/ie-newspaper/epapers/14-04-2022/ahmedabad.pdf"
+  },
+  {
+    "revision": "cb341c69fc777c48bd2553df1acaf9a4",
+    "url": "/ie-newspaper/epapers/14-04-2022/chandigarh.pdf"
+  },
+  {
+    "revision": "e671466227d0f2827e0800077b451730",
+    "url": "/ie-newspaper/epapers/14-04-2022/delhi.pdf"
+  },
+  {
+    "revision": "89a9e4fa4b1c1f26adbadc5bc5ee9078",
+    "url": "/ie-newspaper/epapers/14-04-2022/jaipur.pdf"
+  },
+  {
+    "revision": "274ee2ee22b81ae29323b68af00ea094",
+    "url": "/ie-newspaper/epapers/14-04-2022/kolkata.pdf"
+  },
+  {
+    "revision": "8b0a934a6043eb884683b4e155745837",
+    "url": "/ie-newspaper/epapers/14-04-2022/lucknow.pdf"
+  },
+  {
+    "revision": "673548b6f0c399d11334f3bb7481e8bc",
+    "url": "/ie-newspaper/epapers/14-04-2022/mumbai.pdf"
+  },
+  {
+    "revision": "61aae0ff59c47b9f8d9b994f6f971bf8",
+    "url": "/ie-newspaper/epapers/14-04-2022/pune.pdf"
+  },
+  {
+    "revision": "122a002f66d9c47eafdbad41a7f51a8c",
+    "url": "/ie-newspaper/epapers/15-04-2022/ahmedabad.pdf"
+  },
+  {
+    "revision": "c9034845a98381e09803c54221950f43",
+    "url": "/ie-newspaper/epapers/15-04-2022/chandigarh.pdf"
+  },
+  {
+    "revision": "3d50ae05daa69c887228b328b4eb5d0f",
+    "url": "/ie-newspaper/epapers/15-04-2022/delhi.pdf"
+  },
+  {
+    "revision": "7a6871ad77efd1dd092f0f6435b1ec33",
+    "url": "/ie-newspaper/epapers/15-04-2022/jaipur.pdf"
+  },
+  {
+    "revision": "48355f7ea1d450e23bb7b06f94fd11f3",
+    "url": "/ie-newspaper/epapers/15-04-2022/kolkata.pdf"
+  },
+  {
+    "revision": "3858a96c02be491bc2cebacb80b14f7f",
+    "url": "/ie-newspaper/epapers/15-04-2022/lucknow.pdf"
+  },
+  {
+    "revision": "88c1bf78d76e0f7873dc17a34d9298d7",
+    "url": "/ie-newspaper/epapers/15-04-2022/mumbai.pdf"
+  },
+  {
+    "revision": "8ea8790c158574136214d03703d5463e",
+    "url": "/ie-newspaper/epapers/15-04-2022/pune.pdf"
+  },
+  {
+    "revision": "fc930aac6640f9addb84b7fecc7bd046",
+    "url": "/ie-newspaper/epapers/16-04-2022/ahmedabad.pdf"
+  },
+  {
+    "revision": "f477edb3a9a5d1d6274526aae414255f",
+    "url": "/ie-newspaper/epapers/16-04-2022/chandigarh.pdf"
+  },
+  {
+    "revision": "1f9987e47867f940f011b2e3930bd7b8",
+    "url": "/ie-newspaper/epapers/16-04-2022/delhi.pdf"
+  },
+  {
+    "revision": "f6a9cd1f0dbc88161bf2903fe0d79115",
+    "url": "/ie-newspaper/epapers/16-04-2022/jaipur.pdf"
+  },
+  {
+    "revision": "6da4067c957c44348944393c8e04db3f",
+    "url": "/ie-newspaper/epapers/16-04-2022/kolkata.pdf"
+  },
+  {
+    "revision": "ce14e9b3480921c4de699597ebe286ff",
+    "url": "/ie-newspaper/epapers/16-04-2022/lucknow.pdf"
+  },
+  {
+    "revision": "18c9b6637b5983587a7ec3954472f329",
+    "url": "/ie-newspaper/epapers/16-04-2022/mumbai.pdf"
+  },
+  {
+    "revision": "1e30901bbc119896a615c97e60ed57f4",
+    "url": "/ie-newspaper/epapers/16-04-2022/pune.pdf"
+  },
+  {
+    "revision": "1393dac8746a051753a9d2efba6f09df",
+    "url": "/ie-newspaper/epapers/17-04-2022/ahmedabad.pdf"
+  },
+  {
+    "revision": "cf905f4aeb6427cc3bb4cb47eb7a74d7",
+    "url": "/ie-newspaper/epapers/17-04-2022/chandigarh.pdf"
+  },
+  {
+    "revision": "8590cd3562d9064cbef0a6fb629451f1",
+    "url": "/ie-newspaper/epapers/17-04-2022/delhi.pdf"
+  },
+  {
+    "revision": "748d9e99acd650fb9adfbd5b1baffa27",
+    "url": "/ie-newspaper/epapers/17-04-2022/jaipur.pdf"
+  },
+  {
+    "revision": "8503548fe7a27d4735e943920d2373ce",
+    "url": "/ie-newspaper/epapers/17-04-2022/kolkata.pdf"
+  },
+  {
+    "revision": "4c0db47aa6c3a1ff139078a0ca7d006b",
+    "url": "/ie-newspaper/epapers/17-04-2022/lucknow.pdf"
+  },
+  {
+    "revision": "ceeda9c8ed839a7a09112147e5faf807",
+    "url": "/ie-newspaper/epapers/17-04-2022/mumbai.pdf"
+  },
+  {
+    "revision": "6acc7306f8546e9f31ed0b61e4ce886e",
+    "url": "/ie-newspaper/epapers/17-04-2022/pune.pdf"
+  },
+  {
+    "revision": "831d298cf624de47ad108dac007ad66e",
+    "url": "/ie-newspaper/epapers/18-04-2022/ahmedabad.pdf"
+  },
+  {
+    "revision": "fe7bde42e7ae8dda0dfafcb948245a10",
+    "url": "/ie-newspaper/epapers/18-04-2022/chandigarh.pdf"
+  },
+  {
+    "revision": "51f3f9a3c2cf183aae0c0aa6c48aa1f6",
+    "url": "/ie-newspaper/epapers/18-04-2022/delhi.pdf"
+  },
+  {
+    "revision": "c2e1026494460d7e88461a73b8c65d12",
+    "url": "/ie-newspaper/epapers/18-04-2022/jaipur.pdf"
+  },
+  {
+    "revision": "729fc269072813f9085ddce4b48a7bcd",
+    "url": "/ie-newspaper/epapers/18-04-2022/kolkata.pdf"
+  },
+  {
+    "revision": "d8c83d001ec83a58cbb6f4f71a661a9f",
+    "url": "/ie-newspaper/epapers/18-04-2022/lucknow.pdf"
+  },
+  {
+    "revision": "986a386bb7987df27ee08ee423c997bf",
+    "url": "/ie-newspaper/epapers/18-04-2022/mumbai.pdf"
+  },
+  {
+    "revision": "ecc56cbc4553a1214aa03f7404b8854b",
+    "url": "/ie-newspaper/epapers/18-04-2022/pune.pdf"
+  },
+  {
+    "revision": "0d71068e3cab1aa7df810780b56cb505",
+    "url": "/ie-newspaper/epapers/19-04-2022/ahmedabad.pdf"
+  },
+  {
+    "revision": "8f8cfe76a48c62f88c0cc819020d494f",
+    "url": "/ie-newspaper/epapers/19-04-2022/chandigarh.pdf"
+  },
+  {
+    "revision": "486deda8b3e85c1dc9eb1f4ef68d9aca",
+    "url": "/ie-newspaper/epapers/19-04-2022/delhi.pdf"
+  },
+  {
+    "revision": "cd88248f067c0d201d3aa4b0e3f4ba97",
+    "url": "/ie-newspaper/epapers/19-04-2022/jaipur.pdf"
+  },
+  {
+    "revision": "b9bd6f973f9cee4becc49dd4ad8984a8",
+    "url": "/ie-newspaper/epapers/19-04-2022/kolkata.pdf"
+  },
+  {
+    "revision": "f0099a717dd04a78de3e06d552576270",
+    "url": "/ie-newspaper/epapers/19-04-2022/lucknow.pdf"
+  },
+  {
+    "revision": "f926d2b988c73ce0497dd24b6ba53c77",
+    "url": "/ie-newspaper/epapers/19-04-2022/mumbai.pdf"
+  },
+  {
+    "revision": "3c82bfbd165fb28fece841869f05f709",
+    "url": "/ie-newspaper/epapers/19-04-2022/pune.pdf"
+  },
+  {
+    "revision": "7eba0646d514253cb7c9c77c68a7c237",
+    "url": "/ie-newspaper/epapers/21-03-2022/ahmedabad.pdf"
+  },
+  {
+    "revision": "f71358dd67bfbf4d288c4a87d863e054",
+    "url": "/ie-newspaper/epapers/21-03-2022/chandigarh.pdf"
+  },
+  {
+    "revision": "87c2e457540bef1918ab4a75f9989946",
+    "url": "/ie-newspaper/epapers/21-03-2022/delhi.pdf"
+  },
+  {
+    "revision": "faf77c80c50ebdac70e0186edda3ed4f",
+    "url": "/ie-newspaper/epapers/21-03-2022/jaipur.pdf"
+  },
+  {
+    "revision": "99df853d1c4daa4dec6b96cecce20ef8",
+    "url": "/ie-newspaper/epapers/21-03-2022/kolkata.pdf"
+  },
+  {
+    "revision": "b430ace741e96dfb5ae87c5cc61df3c5",
+    "url": "/ie-newspaper/epapers/21-03-2022/lucknow.pdf"
+  },
+  {
+    "revision": "0ec0662b0d4e39dc452cc50dc115932c",
+    "url": "/ie-newspaper/epapers/21-03-2022/mumbai.pdf"
+  },
+  {
+    "revision": "d4658a6bf61e76ba1027fa789d0d323a",
+    "url": "/ie-newspaper/epapers/21-03-2022/pune.pdf"
+  },
+  {
+    "revision": "2b1e869748d959457a152876a2efaebf",
+    "url": "/ie-newspaper/epapers/22-03-2022/ahmedabad.pdf"
+  },
+  {
+    "revision": "8e6b972a5377debbbc986485943f34a8",
+    "url": "/ie-newspaper/epapers/22-03-2022/chandigarh.pdf"
+  },
+  {
+    "revision": "f9b3dcb25637f06b9113f6655c5e1841",
+    "url": "/ie-newspaper/epapers/22-03-2022/delhi.pdf"
+  },
+  {
+    "revision": "18e2b0872a39748cd921968740f75352",
+    "url": "/ie-newspaper/epapers/22-03-2022/jaipur.pdf"
+  },
+  {
+    "revision": "05e4dbdf020b2b2c244573839b801c55",
+    "url": "/ie-newspaper/epapers/22-03-2022/kolkata.pdf"
+  },
+  {
+    "revision": "3d2302d6ee4824decb8595ca9d478799",
+    "url": "/ie-newspaper/epapers/22-03-2022/lucknow.pdf"
+  },
+  {
+    "revision": "95dca488b7103b5f33dc1964591d35f6",
+    "url": "/ie-newspaper/epapers/22-03-2022/mumbai.pdf"
+  },
+  {
+    "revision": "f9db6c27cd5cb53b2d2c6291f7138138",
+    "url": "/ie-newspaper/epapers/22-03-2022/pune.pdf"
+  },
+  {
+    "revision": "5ce204226c3378d39f08867ee4d5d48c",
+    "url": "/ie-newspaper/epapers/27-03-2022/ahmedabad.pdf"
+  },
+  {
+    "revision": "0ba1b07fb18f4e6cd10f6920152ddd3d",
+    "url": "/ie-newspaper/epapers/27-03-2022/chandigarh.pdf"
+  },
+  {
+    "revision": "50a66ea3ee46043acac13428c69a836e",
+    "url": "/ie-newspaper/epapers/27-03-2022/delhi.pdf"
+  },
+  {
+    "revision": "10aa276e32e3a0d62b6cfe7b50e7e231",
+    "url": "/ie-newspaper/epapers/27-03-2022/jaipur.pdf"
+  },
+  {
+    "revision": "2cb4b83c2c0cd8ca3cff02d8e4b8a0ef",
+    "url": "/ie-newspaper/epapers/27-03-2022/kolkata.pdf"
+  },
+  {
+    "revision": "3d5916de6596b9149e77dd9f08c2b2d7",
+    "url": "/ie-newspaper/epapers/27-03-2022/lucknow.pdf"
+  },
+  {
+    "revision": "061948ed357d4eff07bb94ddf03fd9fd",
+    "url": "/ie-newspaper/epapers/27-03-2022/mumbai.pdf"
+  },
+  {
+    "revision": "73185342206418c3aca56c8fa3f8421c",
+    "url": "/ie-newspaper/epapers/27-03-2022/pune.pdf"
+  },
+  {
+    "revision": "e6c928e61e1d73c01791a3e8afe391b8",
+    "url": "/ie-newspaper/index.html"
+  },
+  {
+    "revision": "d6003e21e5af22ad587e",
+    "url": "/ie-newspaper/js/app.de48a211.js"
+  },
+  {
+    "revision": "91c8f52ad176257bc4bf",
+    "url": "/ie-newspaper/js/chunk-vendors.73963a15.js"
+  },
+  {
+    "revision": "b494208fced63bcd17b57bba917cfd7c",
+    "url": "/ie-newspaper/manifest.json"
+  },
+  {
+    "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
+    "url": "/ie-newspaper/robots.txt"
+  }
+]);
